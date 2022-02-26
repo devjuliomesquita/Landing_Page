@@ -11,7 +11,7 @@
     <section class="banner" id="sec">
         <header>
             <a href="#" class="logo"> Logo</a>
-            <div id="toggle"></div>
+            <div id="toggle" onclick="toggle()"></div>
         </header>
         <div class="content">
             <h2>Olá Mundo,<br>Eu sou <span>Júlio C. Mesquita</span></h2>
@@ -30,8 +30,16 @@
             <li><a href="#">SOBRE</a></li>
             <li><a href="#">SERVIÇOS</a></li>
             <li><a href="#">PORTIFOLIO</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">CONTATO</a></li>
         </ul>
     </div>
+    <script type="text/javascript">
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('Navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
